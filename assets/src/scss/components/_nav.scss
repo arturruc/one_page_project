@@ -1,0 +1,39 @@
+.menu {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+}
+.main-navigation {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.mainmenu-item {
+    margin-right: 35px;
+}
+.mainmenu-item a {
+    font-size: 16px;
+}
+.ws-svg-icon svg:not(.stroke-based) {
+    fill: #212121;
+}
+.menu-with-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.icon-search,
+.icon-account,
+.icon-basket {
+    margin-left: 25px;
+}
+.main-photo {
+    position: relative;
+}
+.text {
+    position: absolute;
+    font-size: 20px;
+    align-items: center;
+}
