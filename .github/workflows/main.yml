@@ -1,4 +1,4 @@
-name: wdrożenie na serwer FTP
+name: wdrożenie na serwer FTP 1
 on: 
   push:
     branches:
