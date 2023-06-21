@@ -1,0 +1,34 @@
+name: wdrożenie na serwer FTP 1
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Krok 1
+      uses: actions/checkout@v1
+    - name: Krok 2
+      uses: actions/setup-node@v2.5.2
+      with:
+        node-version: "14.x"
+    - name: Instalacja dependencji
+      run: npm install
+    - name: Uruchomienie kompilacji
+      run: npm run build
+      
+    
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Wdrożenie aplikacji
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: "s1.ct8.pl"
+        server-dir: "./public_html/wp-content/themes/artur_ruchala/"
+        username: ${{secrets.FTP_USERNAME}}
+        password: ${{secrets.FTP_PASSWORD}}
