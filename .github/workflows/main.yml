@@ -1,0 +1,17 @@
+name: wdrożenie na serwer FTP
+on: 
+  push:
+    branches:
+      -main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: action/checkout@v1
+    - name: Wdrożenie aplikacji
+      uses: SamKirkland/FTP-Deploy-Action@4.3.4
+      with:
+        server: "s1.ct8.pl"
+        server-dir: "./public_html"
+        username: ${{secrets.FTP_USERNAME}}
+        password: ${{secrets.FTP_PASSWORD}}
