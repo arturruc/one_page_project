@@ -2,7 +2,7 @@ name: wdrożenie na serwer FTP 1
 on: 
   push:
     branches:
-      -main
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
