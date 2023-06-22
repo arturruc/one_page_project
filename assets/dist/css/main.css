@@ -16258,14 +16258,20 @@ a:active {
   font-size: 5vw;
 }
 
+.title {
+  display: none;
+}
+
 .cta {
   background: black;
   color: white;
+  left: -17vw;
+  position: relative;
   font-size: 1vw;
   border: none;
   padding: 1vw 1.5vw;
   text-transform: uppercase;
-  margin: 40px 0 0 0;
+  margin: 9px 0 0 0;
 }
 
 #mojeid1 {

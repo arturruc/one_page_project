@@ -11,7 +11,7 @@
 				<img class="carousel-slide" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/zdjeciecocolo.webp" 
 				alt="">
 				<div class="carousel-description">
-					<h2>
+					<h2 class="title">
                     <?php the_title(); ?>
                     </h2>
                     <p>
@@ -20,16 +20,16 @@
 					<button class="cta" onclick="mojaFunkcja();">Shop now</button>
                     <div id="mojeid"></div>	
 
-                    <div id="mojeid1">
+                    <!-- <div id="mojeid1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nisi, corporis odit aliquid aliquam reiciendis consequuntur eius iste! Obcaecati repellendus corporis quas atque incidunt, perferendis exercitationem error earum veritatis vel.
                         Nostrum corporis, quaerat assumenda recusandae maiores vero inventore. Asperiores nesciunt soluta ex blanditiis sunt accusamus, facere voluptate, consectetur optio fuga delectus adipisci dicta quos doloremque, fugiat impedit sit esse! Laborum.
                         Numquam, dolorum. Doloribus vitae, temporibus tempore enim maiores aliquam culpa eligendi nulla expedita obcaecati iure consectetur? Suscipit reiciendis deleniti temporibus ratione adipisci similique vel, accusamus velit repellendus perspiciatis quibusdam amet!
                         Placeat eos et, sed cupiditate recusandae magnam voluptates doloremque ipsa iure. Reprehenderit natus cum sequi temporibus ea repudiandae a labore, assumenda eum omnis. Illo non pariatur delectus qui quo dolores!
                         Libero, beatae rem, aperiam ducimus quaerat necessitatibus sunt mollitia consectetur accusantium alias, repellendus illo! Praesentium pariatur doloremque dolorum molestiae, beatae aliquam sit sequi, debitis ipsa atque odit nemo asperiores quaerat!
 
-                    </div>
-                    <div id="mojeid2"></div>
-                    <button onclick="obiekty();">Sprawdz wartosc w polu</button>
+                    </div> -->
+                    <!-- <div id="mojeid2"></div> -->
+                    <!-- <button onclick="obiekty();">Sprawdz wartosc w polu</button> -->
                     <!-- <label for="">Wpisz liczbe pomiedzy 100 a 500</label>
                     <input type="number" id="pole1" min="100" max="500" required> -->
                     <!-- <button onclick="walidacja();">Sprawdz wartosc w polu</button> -->
